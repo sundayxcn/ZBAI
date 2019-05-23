@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">zbautotrade</string>
+    <string name="app_name">ZB自动交易</string>
+    <string name="net_disable_tip">网络中断</string>
+    <string name="net_not_work_tip">网络异常</string>
 </resources>
