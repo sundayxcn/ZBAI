@@ -1,14 +1,11 @@
 package custom.sunday.zbautotrade.data;
 
-import custom.sunday.zbautotrade.RootBean;
+import custom.sunday.zbautotrade.bean.RootBean;
 import custom.sunday.zbautotrade.bean.CoinDepth;
 import custom.sunday.zbautotrade.bean.Ticker;
 import io.reactivex.Observable;
 import okhttp3.ResponseBody;
-import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Header;
-import retrofit2.http.Headers;
 import retrofit2.http.Query;
 
 public interface MarketZB {

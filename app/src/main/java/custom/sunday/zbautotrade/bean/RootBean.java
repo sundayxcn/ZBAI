@@ -1,4 +1,4 @@
-package custom.sunday.zbautotrade;
+package custom.sunday.zbautotrade.bean;
 
 /**
  * @author apple

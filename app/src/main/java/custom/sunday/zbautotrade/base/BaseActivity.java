@@ -17,14 +17,26 @@ import io.reactivex.disposables.Disposable;
  * Created by zhongfei.sun on 2018/1/17.
  */
 
-public class BaseActivity extends FragmentActivity implements RxLife {
+public abstract class BaseActivity extends FragmentActivity implements RxLife {
 
     private List<Disposable> mRequestList = new ArrayList<>();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(getLayoutId());
+        setupViews();
+        initWorks();
     }
+
+
+
+    protected abstract int getLayoutId();
+
+    protected abstract void setupViews();
+
+    protected abstract void initWorks();
+
 
     @Override
     public void showLoading() {

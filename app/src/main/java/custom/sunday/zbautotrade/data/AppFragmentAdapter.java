@@ -1,7 +1,5 @@
 package custom.sunday.zbautotrade.data;
 
-import android.widget.ListView;
-
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -9,7 +7,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-import custom.sunday.zbautotrade.view.MarketFragment;
+import custom.sunday.zbautotrade.page.market.MarketFragment;
 
 /**
  * @author apple

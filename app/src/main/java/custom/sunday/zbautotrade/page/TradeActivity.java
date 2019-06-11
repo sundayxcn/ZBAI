@@ -1,27 +1,32 @@
-package custom.sunday.zbautotrade;
+package custom.sunday.zbautotrade.page;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.viewpager.widget.ViewPager;
 
+import custom.sunday.zbautotrade.R;
 import custom.sunday.zbautotrade.base.BaseActivity;
 import custom.sunday.zbautotrade.data.AppFragmentAdapter;
 
 public class TradeActivity extends BaseActivity {
     public static final String TAG = "TradeActivity";
     private ViewPager mViewPager;
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        setupViews();
+    protected int getLayoutId() {
+        return R.layout.activity_main;
     }
 
 
-    private void setupViews(){
+    protected void setupViews(){
         mViewPager = findViewById(R.id.view_pager);
         mViewPager.setAdapter(new AppFragmentAdapter(getSupportFragmentManager()));
+    }
+
+    @Override
+    protected void initWorks() {
+
     }
 
     @Override
